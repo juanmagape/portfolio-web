@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #171717;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAV */ 
+nav {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid transparent;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+    z-index: 2;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    padding-top: 12px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+ul{
+    list-style: none;  
+}
+
+nav ul li a {
+    transition: color 0.3s ease-in-out;
+    font-size: medium;
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul li a:link {
+    color: white;
+}
+
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover {
+    color:#17C3B2;
+}
+
+nav ul li a.active {
+    color: #17C3B2;
+    border-bottom: 1px solid #17C3B2;
+}
+
+nav li ul {
+    background-color: #171717;
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+nav li:hover > ul {
+    display:block;
+    max-width: 250px;
+    border: 1px solid #17C3B2;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+nav li ul li a {
+    display: block;
+}
+
+nav li ul li {
+    display: block;
+}
+
+
+/* INICIO */
+#princi {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#princizq {
+    color: white;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+#princizq h1{
+    font-size: 60px;
+    font: bold;
+}
+
+#princizq p {
+    color: #979090;
+    padding-bottom: 40px;
+}
+
+.au1 {
+    padding-top: 180px;
+}
+
+.imglogo {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-top: 60px;
+}
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: white;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 2px solid #17C3B2;
+    border-radius: 10px;
+    padding: 50px 5px 50px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about {
+    margin-top: 20px;
+    padding: 50px 5px 50px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 2px solid #17C3B2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+.imgconst:hover {
+    transform: scale(103%);
+}
+
+a .imgconst {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 0;
+    border: 1px solid #17C3B2;
+}
+/* Nuestros servicios */
+
+.nuse {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 20px;
+}
+
+.nuse h2 {
+    padding-bottom: 30px;
+    color: white;
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    width: 400px;
+    max-width: 700px;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px solid #17C3B2;
+}
+
+.card2 {
+    background-color: #117a70   ;
+    color: white;
+    width: 300px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    max-width: 300px;
+    padding-bottom: 0px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+.card2:hover {
+    transform: scale(103%);
+}
+
+.fotocardmas {
+    border-radius: 5px 5px 0px 0px;
+    width: 300px;
+}
+
+.card2 p {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.card h4 {
+    font: bold;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    max-width: 400px;
+
+    padding-right: 20px;
+}
+
+.card img {
+    padding-bottom: 40px;
+    padding-top: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* FORMULARIO */ 
+
+.ayudabor {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 800px;
+}
+
+
+.ayuda {
+   
+    color: white;
+    background-color: transparent;
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    border: 2px solid #17C3B2;
+}
+
+strong {
+    color: #17C3B2;
+}
+
+.titulos {
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    font-size: 35px;
+    text-decoration: underline #17C3B2  ;
+}
+
+.parraf {
+    margin-top: 20px;
+}
+
+
+
+#contactobutton {
+	padding: 0.8em 1.8em;
+	border: 2px solid #17C3B2;
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	transition: .3s;
+	z-index: 1;
+	font-family: inherit;
+	color: white;
+    border-radius: 10px;
+}
+
+#contactobutton::before {
+    content: '';
+	width: 0;
+	height: 300%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	background: #17C3B2;
+	transition: .5s ease;
+	display: block;
+	z-index: -1;
+}
+
+#contactobutton:hover {
+    background-color: #312f5c;
+    color: white;
+    cursor: pointer;
+}
+
+#contactobutton:hover::before {
+	width: 105%;
+   }
+
+#contactobutton:hover {
+	color: #111;
+   }
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #17C3B2;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #171717;
+}
+
+footer a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #17C3B2;
+    transition: color 0.3s ease-in-out;
+}

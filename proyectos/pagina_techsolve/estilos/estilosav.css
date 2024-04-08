@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #171717;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    color: #17C3B2;
+}
+
+/* NAV */ 
+nav {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid transparent;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+    z-index: 2;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    padding-top: 12px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+ul{
+    list-style: none;  
+}
+
+nav ul li a {
+    transition: color 0.3s ease-in-out;
+    font-size: medium;
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul li a:link {
+    color: white;
+}
+
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover {
+    color:#17C3B2;
+}
+
+nav ul li a.active {
+    color: #17C3B2;
+    border-bottom: 1px solid #17C3B2;
+}
+
+nav li ul {
+    background-color: #171717;
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+nav li:hover > ul {
+    display:block;
+    max-width: 250px;
+    border: 1px solid #17C3B2;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+nav li ul li a {
+    display: block;
+}
+
+nav li ul li {
+    display: block;
+}
+
+
+
+.au1 {
+    padding-top: 150px;
+
+}
+
+.au1 img {    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* texto */
+
+.actividades {
+    margin-top: 20px;
+    padding: 50px 5px 50px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1a1931;
+    border: #191919;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* FAQS */
+
+#faqs {
+    padding-top: 50px;
+}
+  
+  .faq-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background-color: #171717;
+    border-radius: 10px;
+  }
+  
+  .faq-item {
+    padding: 20px;
+    border-bottom: 1px solid #17C3B2;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 3px;
+    padding-top: 3px;
+  }
+  
+  .faq-answer {
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .faq-answer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .faq-answer.active {
+    border-bottom: 1px solid #17C3B2;
+  }
+  
+  .icon-container i {
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon-container i.active {
+    transform: rotate(90deg);
+  }
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #17C3B2;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #171717;
+}
+
+footer a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #17C3B2;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* BIOS */
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: white;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 2px solid #17C3B2;
+    border-radius: 10px;
+    padding: 50px 5px 50px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    text-align: center;
+    text-decoration: underline #17C3B2;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.container img {
+    width: 350px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.parrafbios {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: justify;
+}
+
+.imgbios {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.titulosbi {
+    margin-top: 20px;
+}
+
+/* CONSULTAS */
+
+.phpconsult {
+    padding-top: 30px;
+}
+
+.consulta {
+    border: 1px solid #17C3B2;
+    border-radius: 10px;
+    max-width: 800px;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#inicioa {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;    
+}
