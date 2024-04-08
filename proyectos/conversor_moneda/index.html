@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas | Mastermind</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../../img/logoweb.png">
+</head>
+<body>
+    <header>
+        <img id="image-initial" src="./logo.png" alt="image initial money converter">
+    </header>
+    <div>
+        <p id="error"></p>
+    </div>
+    <form id="formconver">
+        <div class="itemform">
+            <label for="content">Introduce tu valor a convertir</label>
+            <input type="text" name="content" id="valorm" value="" placeholder="0">
+            <select name="currency" id="monedaSel">
+                <option value="euro">€</option>
+                <option value="libra">£</option>
+                <option value="dolar">$</option>
+            </select>
+        
+            <label for="conversion" id="moncon">Moneda a convertir</label>
+            <select name="currency_result" id="monedaCam">
+                <option value="euro">€</option>
+                <option value="libra">£</option>
+                <option value="dolar">$</option>
+            </select>
+        </div>
+        
+        
+        <div class="itemform">
+            <label for="result">Resultado de la conversión</label>
+            <input type="number" name="content_result" id="result" value="" placeholder="0" min="1" readonly>
+        </div>
+        <div class="itemform">
+            <input type="submit" value="Convertir" id="buttonConvert">
+        </div>
+    </form>
+</main>
+<footer> 
+    <p>Curso FrontEnd HTML,CSS y JS</p>
+</footer>   
+    <script src="./app.js"></script> 
+</body>
+</html>
